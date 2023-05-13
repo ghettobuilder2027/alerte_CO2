@@ -24,6 +24,10 @@ void setup() {
   pinMode(jaune, OUTPUT);
   pinMode(vert, OUTPUT);
   pinMode(rouge, OUTPUT);
+  for (int i = 0;i<10; i++) {
+    digitalWrite(jaune, HIGH);digitalWrite(vert, HIGH); digitalWrite(rouge, HIGH);delay(100);
+    digitalWrite(jaune, LOW);digitalWrite(vert, LOW);digitalWrite(rouge, LOW);delay(100);
+  }
   digitalWrite(jaune, LOW);
   digitalWrite(vert, LOW);
   digitalWrite(rouge, LOW);
@@ -88,3 +92,5 @@ void loop() {
   }
   delay (2000);
 }
+
+
