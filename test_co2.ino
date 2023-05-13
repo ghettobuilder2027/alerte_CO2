@@ -28,13 +28,8 @@ void setup() {
     digitalWrite(jaune, HIGH);digitalWrite(vert, HIGH); digitalWrite(rouge, HIGH);delay(100);
     digitalWrite(jaune, LOW);digitalWrite(vert, LOW);digitalWrite(rouge, LOW);delay(100);
   }
-  digitalWrite(jaune, LOW);
-  digitalWrite(vert, LOW);
-  digitalWrite(rouge, LOW);
-
   Serial.println("ENS160 Capteur de qualité de l'air (ici C02");
   delay(1000);
-
   Serial.print("ENS160...");
   ens160.begin();
   Serial.println(ens160.available() ? "done." : "failed!");
