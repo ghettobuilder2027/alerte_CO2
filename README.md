@@ -1,2 +1,1 @@
-# alerte_CO2
-Capteur CO2
+# Capteur de C02 avec visualisation par 3 LEDS (vert, jaune, rouge)
